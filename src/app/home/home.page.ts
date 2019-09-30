@@ -25,7 +25,6 @@ export class HomePage {
   }
 
   getRowClass(row) {
-    console.log('class: ', row);
     const isMale = row.gender === 'male';
 
     if (!this.customRowClass) {
