@@ -1,14 +1,43 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="dark">
     <ion-title>
-      Ionic Blank
+      ngx-Table
     </ion-title>
+
+    <ion-button slot="start">
+      <ion-button (click)="switchStyle()">
+        {{ tableStyle }}
+      </ion-button>
+    </ion-button>
+
+    <ion-button slot="end">
+      <ion-button (click)="customRowClass = !customRowClass">
+        <ion-icon name="bulb" slot="icon-only"></ion-icon>
+      </ion-button>
+    </ion-button>
+
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-  </div>
+
+  <ngx-datatable
+  [rows]="companies"
+  [ngClass]="tableStyle"
+  [rowHeight]="'auto'"
+  [headerHeight]="50"
+  [columnMode]="'force'"
+  [rowClass]="getRowClass.bind(this)">
+
+  <ngx-datatable-column name="Name"></ngx-datatable-column>
+  <ngx-datatable-column name="Gender"></ngx-datatable-column>
+  <ngx-datatable-column name="Company"></ngx-datatable-column>
+
+  <ngx-datatable-column name="Actions" [sortable]="false">
+    <ng-template let-row="row" let-value="value" ngx-datatable-cell-template>
+      <ion-button size="small" fill="outline" (click)="open(row)">Details</ion-button>
+    </ng-template>
+  </ngx-datatable-column>
+ 
+  </ngx-datatable>
 </ion-content>

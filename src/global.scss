@@ -30,3 +30,11 @@
 @import '~@swimlane/ngx-datatable/themes/bootstrap.scss';
 @import '~@swimlane/ngx-datatable/themes/material.scss';
 @import '~@swimlane/ngx-datatable/assets/icons.css';
+
+.male-row {
+  background-color: lightblue !important;
+}
+
+.female-row {
+  background-color: lightpink !important;
+}
