@@ -3,41 +3,40 @@ import { Component } from '@angular/core';
 import data from '../../assets/company.json';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: 'home.page.html',
-  styleUrls: ['home.page.scss'],
+	selector: 'app-home',
+	templateUrl: 'home.page.html',
+	styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-  public companies = data;
-  tableStyle = 'bootstrap';
-  customRowClass = false;
+	public companies = data;
+	tableStyle = 'bootstrap';
+	customRowClass = false;
 
-  constructor() {
-    console.log(this.companies);
-  }
+	constructor() {
+		console.log(this.companies);
+	}
 
-  switchStyle() {
-    if (this.tableStyle === 'dark') {
-      this.tableStyle = 'bootstrap';
-    } else {
-      this.tableStyle = 'dark';
-    }
-  }
+	switchStyle() {
+		if (this.tableStyle === 'dark') {
+			this.tableStyle = 'bootstrap';
+		} else {
+			this.tableStyle = 'dark';
+		}
+	}
 
-  getRowClass(row) {
-    const isMale = row.gender === 'male';
+	getRowClass(row) {
+		const isMale = row.gender === 'male';
 
-    if (!this.customRowClass) {
-      return {};
-   }
-    return {
-      'male-row': isMale,
-      'female-row': !isMale
-    };
-  }
+		if (!this.customRowClass) {
+			return {};
+		}
+		return {
+			'male-row': isMale,
+			'female-row': !isMale,
+		};
+	}
 
-  async open(row) {
-    console.log(row);
-  }
-
+	async open(row) {
+		console.log(row);
+	}
 }

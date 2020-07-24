@@ -1,45 +1,44 @@
 <ion-header>
-  <ion-toolbar color="dark">
-    <ion-title>
-      ngx-Table
-    </ion-title>
+	<ion-toolbar color="dark">
+		<ion-title>
+			ngx-Table
+		</ion-title>
 
-    <ion-button slot="start">
-      <ion-button (click)="switchStyle()">
-        <ion-icon name="bulb" slot="icon-only"></ion-icon>
-        {{ tableStyle }}
-      </ion-button>
-    </ion-button>
+		<ion-button slot="start">
+			<ion-button (click)="switchStyle()">
+				<ion-icon name="bulb" slot="icon-only"></ion-icon>
+				{{ tableStyle }}
+			</ion-button>
+		</ion-button>
 
-    <ion-button slot="end">
-      <ion-button (click)="customRowClass = !customRowClass">
-        <ion-icon name="list" slot="icon-only"></ion-icon>
-        Male/Female
-      </ion-button>
-    </ion-button>
-
-  </ion-toolbar>
+		<ion-button slot="end">
+			<ion-button (click)="customRowClass = !customRowClass">
+				<ion-icon name="list" slot="icon-only"></ion-icon>
+				Male/Female
+			</ion-button>
+		</ion-button>
+	</ion-toolbar>
 </ion-header>
 
 <ion-content>
+	<ngx-datatable
+		[rows]="companies"
+		[ngClass]="tableStyle"
+		[rowHeight]="'auto'"
+		[headerHeight]="50"
+		[columnMode]="'force'"
+		[rowClass]="getRowClass.bind(this)"
+	>
+		<ngx-datatable-column name="Name"></ngx-datatable-column>
+		<ngx-datatable-column name="Gender"></ngx-datatable-column>
+		<ngx-datatable-column name="Company"></ngx-datatable-column>
 
-  <ngx-datatable
-  [rows]="companies"
-  [ngClass]="tableStyle"
-  [rowHeight]="'auto'"
-  [headerHeight]="50"
-  [columnMode]="'force'"
-  [rowClass]="getRowClass.bind(this)">
-
-  <ngx-datatable-column name="Name"></ngx-datatable-column>
-  <ngx-datatable-column name="Gender"></ngx-datatable-column>
-  <ngx-datatable-column name="Company"></ngx-datatable-column>
-
-  <ngx-datatable-column name="Actions" [sortable]="false">
-    <ng-template let-row="row" let-value="value" ngx-datatable-cell-template>
-      <ion-button size="small" fill="outline" (click)="open(row)">Details</ion-button>
-    </ng-template>
-  </ngx-datatable-column>
- 
-  </ngx-datatable>
+		<ngx-datatable-column name="Actions" [sortable]="false">
+			<ng-template let-row="row" let-value="value" ngx-datatable-cell-template>
+				<ion-button size="small" fill="outline" (click)="open(row)"
+					>Details</ion-button
+				>
+			</ng-template>
+		</ngx-datatable-column>
+	</ngx-datatable>
 </ion-content>
