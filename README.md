@@ -19,7 +19,7 @@
 
 ## :books: General info
 
-* json data is displayed in a table that is very quickly created using the ngx-datatable module. Buttons are added to hange from Material to Bootstrap styles and also from light to dark mode. Another button changes the classes of the rows so male and female employees are shown in different colours.
+* json data is displayed in a table that is very quickly created using the ngx-datatable module. Buttons are added to change from Material to Bootstrap styles and also from light to dark mode. Another button changes the classes of the rows so male and female employees are shown in different colours.
 
 ## :camera: Screenshots
 
@@ -37,7 +37,6 @@
 
 * Run `npm i` to install dependencies
 * To start the server on _localhost://8100_ type: 'ionic serve'
-* The Ionic DevApp was installed on an Android device from the Google Play app store.
 
 ## :computer: Code Examples
 
