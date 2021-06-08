@@ -2,6 +2,12 @@
 
 * App to show json data table, using [Swimlane npm module 'ngx-datatable'](https://github.com/swimlane/ngx-datatable) and the [Ionic 5 framework](https://ionicframework.com/docs).
 * This is another great Ionic Quick Win from [Simon Grimm at the IonicAcademy'](https://www.youtube.com/channel/UCZZPgUIorPao48a1tBYSDgg) - see [:clap: Inspiration](#clap-inspiration) below.
+* **Note:** to open web links in a new window use: _ctrl+click on link_
+
+![GitHub repo size](https://img.shields.io/github/repo-size/AndrewJBateman/ionic-angular-datatable?style=plastic)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/AndrewJBateman/ionic-angular-datatable?style=plastic)
+![GitHub Repo stars](https://img.shields.io/github/stars/AndrewJBateman/ionic-angular-datatable?style=plastic)
+![GitHub last commit](https://img.shields.io/github/last-commit/AndrewJBateman/ionic-angular-datatable?style=plastic)
 
 ## :page_facing_up: Table of contents
 
@@ -30,7 +36,7 @@
 
 * [Ionic v5](https://ionicframework.com/)
 * [Ionic/angular v5](https://ionicframework.com/)
-* [Angular v11](https://angular.io/)
+* [Angular v12](https://angular.io/)
 * [swimlane npm module 'ngx-datatable' v17](http://swimlane.github.io/ngx-datatable/)
 
 ## :floppy_disk: Setup
@@ -77,6 +83,10 @@
 
 * [Simon Grimm IonicAcademy Youtube video 'Creating Ionic Datatable With ngx-datatable'](https://www.youtube.com/watch?v=Ji52_xdxkDg)
 
+## :file_folder: License
+
+* This project is licensed under the terms of the MIT license.
+
 ## :envelope: Contact
 
-* Repo created by [ABateman](https://www.andrewbateman.org) - you are welcome to [send me a message](https://andrewbateman.org/contact)
+* Repo created by [ABateman](https://github.com/AndrewJBateman), email: gomezbateman@yahoo.com
