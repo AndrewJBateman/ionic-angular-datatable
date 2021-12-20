@@ -12,9 +12,7 @@ export class HomePage {
 	tableStyle = 'bootstrap';
 	customRowClass = false;
 
-	constructor() {
-		console.log(this.companies);
-	}
+	constructor() {}
 
 	switchStyle() {
 		if (this.tableStyle === 'dark') {
