@@ -25,7 +25,7 @@
 
 ## :books: General info
 
-* json data is displayed in a table that is very quickly created using the ngx-datatable module. Buttons are added to change from Material to Bootstrap styles and also from light to dark mode. Another button changes the classes of the rows so male and female employees are shown in different colours.
+* JSON data is displayed in a table that is very quickly created using the ngx-datatable module. Buttons are added to change from Material to Bootstrap styles and also from light to dark mode. Another button changes the classes of the rows so male and female employees are shown in different colours.
 
 ## :camera: Screenshots
 
@@ -34,10 +34,10 @@
 
 ## :signal_strength: Technologies
 
-* [Ionic v5](https://ionicframework.com/)
-* [Ionic/angular v5](https://ionicframework.com/)
-* [Angular v12](https://angular.io/)
-* [swimlane npm module 'ngx-datatable' v17](http://swimlane.github.io/ngx-datatable/)
+* [Ionic v6](https://ionicframework.com/)
+* [Ionic/angular v6](https://ionicframework.com/)
+* [Angular v13](https://angular.io/)
+* [swimlane npm module 'ngx-datatable' v20](http://swimlane.github.io/ngx-datatable/)
 
 ## :floppy_disk: Setup
 
@@ -76,12 +76,13 @@
 
 ## :clipboard: Status & To-do list
 
-* Status: Working.
+* Status: Working
 * To-do: Nothing
 
 ## :clap: Inspiration
 
 * [Simon Grimm IonicAcademy Youtube video 'Creating Ionic Datatable With ngx-datatable'](https://www.youtube.com/watch?v=Ji52_xdxkDg)
+* [ngx-datatable documentation](https://swimlane.gitbook.io/ngx-datatable/)
 
 ## :file_folder: License
 
