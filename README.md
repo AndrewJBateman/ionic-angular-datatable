@@ -1,6 +1,6 @@
 # :zap: Ionic Angular Data Table
 
-* App to show json data table, using [Swimlane npm module 'ngx-datatable'](https://github.com/swimlane/ngx-datatable) and the [Ionic 5 framework](https://ionicframework.com/docs).
+* App to show json data table, using [Swimlane npm module 'ngx-datatable'](https://github.com/swimlane/ngx-datatable) and the [Ionic framework](https://ionicframework.com/docs).
 * This is another great Ionic Quick Win from [Simon Grimm at the IonicAcademy'](https://www.youtube.com/channel/UCZZPgUIorPao48a1tBYSDgg) - see [:clap: Inspiration](#clap-inspiration) below.
 * **Note:** to open web links in a new window use: _ctrl+click on link_
 
