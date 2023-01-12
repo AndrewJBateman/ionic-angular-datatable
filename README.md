@@ -37,7 +37,7 @@
 
 * [Ionic v6](https://ionicframework.com/)
 * [Ionic/angular v6](https://ionicframework.com/)
-* [Angular v14](https://angular.io/)
+* [Angular v15](https://angular.io/)
 * [swimlane npm module 'ngx-datatable' v20](http://swimlane.github.io/ngx-datatable/)
 
 ## :floppy_disk: Setup
